@@ -4,7 +4,7 @@
 ### Summary:
 
 
-Boosting is a powerful ensemble technique in machine learning that combines multiple weak learners (typically decision trees) to form a strong learner. Sometimes a single decision tree might not be very accurate because it can only consider a limited number of questions or scenarios. For instance, if you're trying to decide what to wear, your decision tree might have questions like "Is it raining?" or "Is it cold outside?" Each answer leads you down a different path to the final decision. t's like trying to decide on your entire day's schedule based only on the weather—it's helpful, but there's a lot more to consider.
+Boosting is a powerful ensemble technique in machine learning that combines multiple weak learners (typically decision trees) to form a strong learner. Sometimes a single decision tree might not be very accurate because it can only consider a limited number of questions or scenarios. For instance, if you're trying to decide what to wear, your decision tree might have questions like "Is it raining?" or "Is it cold outside?" Each answer leads you down a different path to the final decision. It's like trying to decide on your entire day's schedule based only on the weather—it's helpful, but there's a lot more to consider.
 
 
 Boosting involves creating a series of decision trees, where each new tree tries to correct the mistakes of the previous ones. It's like getting advice from a group of friends on what to wear. The first friend gives advice based on the weather, the next friend considers your choice and also adds advice based on what you're doing that day, and so on. Each friend's advice is focused on what the previous friends might have missed. The final decision (or prediction) in boosting isn't based on just one tree, but rather it's a combination of all the trees. Each tree has a say in the final decision, but trees that do a better job of correcting mistakes have a bigger say. It's like listening to all your friends' advice and then making a decision based on the most helpful suggestions.
@@ -18,9 +18,9 @@ Boosting can be very powerful. Since each new tree is built to correct the mista
 - LightGBM (Light Gradient Boosting Machine)
 - CatBoost (Categorical Boosting)
 
--
+
 Each of these methods has its strengths and is suited for different kinds of data and problems. Choosing the right one depends on the specific requirements of the task, such as the nature of the data, the size of the dataset, computational resources, and the specific problem being solved.
--
+
 
 
 
