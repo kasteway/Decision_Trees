@@ -159,5 +159,5 @@ The following tools were used in this project:
                   
                   
 2.	SKLearn to implement various classification models.
-3.	Matplotlib and Seaborn to visualize the data and model outputs...
+3.	Matplotlib and Seaborn to visualize the data and model outputs.
 ![image](https://github.com/kasteway/Boosting_on_Trees/assets/62068733/cafffca4-7676-4227-9f9e-573db46444b7)
