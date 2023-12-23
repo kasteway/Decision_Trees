@@ -55,13 +55,13 @@ Each of these methods has its strengths and is suited for different kinds of dat
 There are several boosting methods, each with its unique approach
 
 
-######    AdaBoost (Adaptive Boosting):
+######    AdaBoost (Adaptive Boosting): from sklearn.ensemble import AdaBoostClassifier or AdaBoostRegressor
 
 - How it Works: AdaBoost starts with a simple decision tree and gives equal weight to all training examples. After each tree is built, it increases the weight of the examples that were misclassified, so the next tree focuses more on those difficult cases.
 - Key Feature: The algorithm adapts by giving more focus to hard-to-classify instances, making it very effective for varied datasets.
 - Usage: Commonly used in classification problems, especially where understanding the contribution of different features is important.
 
-######    Gradient Boosting:
+######    Gradient Boosting: from sklearn.ensemble import GradientBoostingClassifier or GradientBoostingRegressor
 
 - How it Works: Gradient Boosting builds trees in a sequential manner, where each new tree is made to correct the errors of the previous ones. However, instead of adjusting weights like AdaBoost, it uses a gradient descent algorithm to minimize the loss (error).
 - Key Feature: It’s more flexible than AdaBoost as it allows optimization of arbitrary differentiable loss functions.
