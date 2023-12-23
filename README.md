@@ -117,6 +117,7 @@ The data set used for this analysis comes from [UC Irvine Machine Learning Repos
 - model_name.feature_importances_ ->
 - model_name.feature_importances_.argmax() -> Which column is the most important
 - X.columns[model_name.feature_importances_.argmax()] -> Get name of important column
+- feats = pd.DataFrame(index=X.columns, data=model.feature_importances_, columns=['Importance'])
 
 
 
