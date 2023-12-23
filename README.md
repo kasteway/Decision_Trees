@@ -110,7 +110,15 @@ The data set used for this analysis comes from [UC Irvine Machine Learning Repos
 
 ---
 
+### Tips:
 
+- Feature Importance -> lists the most useful features from the dataset after running the alogrithm
+- model_name.feature_importances_ ->
+- model_name.feature_importances_.argmax() -> Which column is the most important
+- X.columns[model_name.feature_importances_.argmax()] -> Get name of important column
+
+
+---
 
 
 
