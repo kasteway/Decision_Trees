@@ -119,7 +119,6 @@ The data set used for this analysis comes from [UC Irvine Machine Learning Repos
 - X.columns[model_name.feature_importances_.argmax()] -> Get name of important column
 
 
----
 
 ---
 
