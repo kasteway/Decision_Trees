@@ -21,6 +21,9 @@ In a decision tree, data starts at the root node, undergoes a series of splits (
 
   - Leaf nodes are the final output of the decision tree. These nodes do not split any further and contain the outcome or prediction. In classification trees, each leaf node represents a class label. In regression trees, they represent a continuous value.
 
+4. Node Impurity:
+   
+   - This is a measure of the homogeneity of the labels at the node. The goal is to have pure nodes (i.e., all data points in a node belong to the same class). Impurity is used as a criterion for splitting nodes.
 
 ---
 ### Advantages:
@@ -56,8 +59,6 @@ In a decision tree, data starts at the root node, undergoes a series of splits (
 - Depth of a Tree: The depth of a tree is the length of the longest path from the root node down to the farthest leaf node. In many algorithms, you can set the maximum depth to prevent the tree from becoming too complex.
 
 - Splitting Criterion: This refers to the metric used to decide how the data at a node will be split. Common criteria include Gini impurity and entropy for classification trees, and variance reduction for regression trees.
-
-- Node Impurity: This is a measure of the homogeneity of the labels at the node. The goal is to have pure nodes (i.e., all data points in a node belong to the same class). Impurity is used as a criterion for splitting nodes.
 
 - Information Gain: This is used to decide which feature to split on at each step in building the tree. Information gain measures how much "information" a feature gives us about the class.
 
