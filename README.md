@@ -78,17 +78,16 @@ Decision trees use a metric to choose the best feature to split on at each node.
 
 - Gini Impurity:
   
-      - Used in the CART (Classification and Regression Trees) algorithm, Gini impurity measures the frequency at which any element of the dataset will be mislabeled when it is randomly labeled according to the distribution of labels in the dataset.
-
-      - A Gini impurity of 0 means all elements in the node belong to a single class.
+   - Used in the CART (Classification and Regression Trees) algorithm, Gini impurity measures the frequency at which any element of the dataset will be mislabeled when it is randomly labeled according to the distribution of labels in the dataset.
+   - A Gini impurity of 0 means all elements in the node belong to a single class.
 
 - Entropy and Information Gain:
   
-      - Entropy is a measure of disorder or uncertainty, and the goal of using entropy is to maximize the reduction in entropy after a split – this reduction is known as information gain.
+   - Entropy is a measure of disorder or uncertainty, and the goal of using entropy is to maximize the reduction in entropy after a split – this reduction is known as information gain.
 
 - Variance Reduction:
   
-      - Used in regression trees. The feature and split point that lead to the largest reduction in variance of the target variable are chosen.
+   - Used in regression trees. The feature and split point that lead to the largest reduction in variance of the target variable are chosen.
 
 #### Summary:
 
@@ -101,22 +100,22 @@ The algorithm will evaluate each feature and calculate the metric (like Gini imp
 Determining when to stop splitting the nodes is crucial to avoid overfitting. 
 
 - Pure Node:
-      - When a leafe node is 100% of one class.  
+   - When a leafe node is 100% of one class.  
 
 - Increase in Impurity:
-      - Stop splitting if the split does not decrease the impurity significantly.
+   - Stop splitting if the split does not decrease the impurity significantly.
   
 - Maximum Depth:
-      - Pre-set a maximum depth of the tree. Once this depth is reached, the tree stops growing.
+   - Pre-set a maximum depth of the tree. Once this depth is reached, the tree stops growing.
 
 - Minimum Samples for a Split:
    - Specify the minimum number of samples that a node must have to consider a split. If the number of samples is below this threshold, the node is not split.
 
 - Minimum Samples per Leaf Node:
-      - Set the minimum number of samples that a leaf node must have. This ensures that each leaf has a sufficient number of instances.
+   - Set the minimum number of samples that a leaf node must have. This ensures that each leaf has a sufficient number of instances.
 
 - Pruning:
-      - After building a large tree, prune it back by removing branches that provide little predictive power. This can be done using techniques like cost complexity pruning (also known as weakest link pruning).
+   - After building a large tree, prune it back by removing branches that provide little predictive power. This can be done using techniques like cost complexity pruning (also known as weakest link pruning).
 
 
 ---
