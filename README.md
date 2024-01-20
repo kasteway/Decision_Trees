@@ -95,6 +95,8 @@ The algorithm will evaluate each feature and calculate the metric (like Gini imp
 
 ![Screenshot 2024-01-20 at 1 06 36 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/f73f9297-d6f3-4132-a05d-9373c12299a6)
 
+![Screenshot 2024-01-20 at 1 17 39 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/23f359ba-0989-48af-86e3-e309350df107)
+
 --- 
 
 ## When Does the Splitting Stop?
