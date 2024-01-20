@@ -83,7 +83,7 @@ Decision trees use a metric to choose the best feature to split on at each node.
 
 - Entropy and Information Gain:
   
-   - Entropy is a measure of disorder or uncertainty, and the goal of using entropy is to maximize the reduction in entropy after a split – this reduction is known as information gain.
+   - Entropy is a measure of disorder or uncertainty, and the goal of using entropy is to maximize the reduction in entropy after a split & this reduction is known as information gain.
 
 - Variance Reduction:
   
@@ -92,6 +92,8 @@ Decision trees use a metric to choose the best feature to split on at each node.
 #### Summary:
 
 The algorithm will evaluate each feature and calculate the metric (like Gini impurity or information gain) for every possible split. The feature and split that result in the highest information gain (or lowest impurity) are chosen for the node.
+
+![Screenshot 2024-01-20 at 1 06 36 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/f73f9297-d6f3-4132-a05d-9373c12299a6)
 
 --- 
 
