@@ -1,7 +1,73 @@
 # Decision_Trees
 
+A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
 
 
+### How it works:
+In a decision tree, data starts at the root node, undergoes a series of splits (based on the features of the data), and eventually ends up in one of the leaf nodes, which provides the decision or prediction of the model.
+
+
+1. Nodes:
+
+  - Root Node: This is the starting point of the tree. It represents the entire dataset, which then gets divided into two or more homogeneous sets.
+  
+  - Decision Node: When a sub-node splits into further sub-nodes, it's called a decision node. These are the points where the data is split based on a certain condition or attribute.
+
+2. Splits:
+
+  - Splits are the criteria or conditions that divide nodes into two or more sub-nodes. For example, in a decision tree classifying animals, a split might be based on whether the animal can fly. Each split aims to make the resulting sub-nodes as pure as possible, meaning the data in each sub-node is more similar to each other and different from the data in other sub-nodes.
+
+3. Leaves or Leaf Nodes:
+
+  - Leaf nodes are the final output of the decision tree. These nodes do not split any further and contain the outcome or prediction. In classification trees, each leaf node represents a class label. In regression trees, they represent a continuous value.
+
+
+
+### Advantages:
+
+- Easy to Understand and Interpret: Decision trees can be visualized, making them easy to understand even for people without technical knowledge. They mimic human decision-making.
+
+- Handles both Numeric and Categorical Data: They can work with different types of data – whether it's numbers or categories.
+
+- Requires Little Data Preprocessing: Unlike some other algorithms, decision trees often don't require extensive preprocessing of data (like normalization or scaling).
+
+- Useful for Feature Selection: Decision trees can identify the most effective variables for classification or prediction.
+
+### Disadvantages:
+
+- Overfitting: Decision trees can create overly complex trees that do not generalize well from the training data, known as overfitting.
+
+- Can be Unstable: Small changes in the data might result in a completely different tree being generated.
+
+- Biased with Imbalanced Data: If some classes dominate, decision trees can create biased trees. Balancing the dataset is usually required.
+
+- Not the Best for Continuous Variables: They are not well-suited for tasks where prediction of continuous values (like predicting house prices) is needed.
+
+
+
+
+---
+## Important terms related to decision trees in machine learning:
+
+- Branch / Edge: These are the lines connecting nodes, representing the flow from one node to another. A branch represents the outcome of a test and connects to the next node or leaf.
+
+- Pruning: This is a technique used to reduce the size of a decision tree by removing parts of the tree that do not provide power to classify instances. Pruning helps in reducing the complexity of the final classifier, and hence improves predictive accuracy by reducing overfitting.
+
+- Depth of a Tree: The depth of a tree is the length of the longest path from the root node down to the farthest leaf node. In many algorithms, you can set the maximum depth to prevent the tree from becoming too complex.
+
+- Splitting Criterion: This refers to the metric used to decide how the data at a node will be split. Common criteria include Gini impurity and entropy for classification trees, and variance reduction for regression trees.
+
+- Node Impurity: This is a measure of the homogeneity of the labels at the node. The goal is to have pure nodes (i.e., all data points in a node belong to the same class). Impurity is used as a criterion for splitting nodes.
+
+- Information Gain: This is used to decide which feature to split on at each step in building the tree. Information gain measures how much "information" a feature gives us about the class.
+
+- Binary Trees: These are a specific type of decision tree where each node has at most two children. This is common in many decision tree algorithms.
+
+- Ensemble Methods: Techniques like Random Forests and Gradient Boosted Trees use multiple decision trees to improve predictive performance.
+
+
+
+---
 
 
 ## Boosting_on_Trees
