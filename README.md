@@ -97,7 +97,11 @@ The algorithm will evaluate each feature and calculate the metric (like Gini imp
 
 ![Screenshot 2024-01-20 at 1 17 39 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/23f359ba-0989-48af-86e3-e309350df107)
 
+## Regression choosing a split:
+
 ![Screenshot 2024-01-20 at 1 50 32 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/33def2d5-ede2-411b-8f00-d9360bf158d8)
+
+![Screenshot 2024-01-20 at 2 00 09 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/72db9c21-8260-4ab3-a3b5-ada6630332d2)
 
 --- 
 
