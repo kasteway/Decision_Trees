@@ -1,10 +1,10 @@
 # Decision_Trees
 
-A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
+A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. The goal is to maximize purity or minimize impurity. Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
 
 ---
 ### How it works:
-In a decision tree, data starts at the root node, undergoes a series of splits (based on the features of the data), and eventually ends up in one of the leaf nodes, which provides the decision or prediction of the model.
+In a decision tree, data starts at the root node, undergoes a series of splits (based on the features of the data), and eventually ends up in one of the leaf nodes, which provides the decision or prediction of the model. The goal is to have pure nodes (i.e., all data points in a node belong to the same class).
 
 
 1. Nodes:
@@ -23,7 +23,7 @@ In a decision tree, data starts at the root node, undergoes a series of splits (
 
 4. Node Impurity:
    
-   - This is a measure of the homogeneity of the labels at the node. The goal is to have pure nodes (i.e., all data points in a node belong to the same class). Impurity is used as a criterion for splitting nodes.
+   - The goal is to have pure nodes (i.e., all data points in a node belong to the same class). Impurity is used as a criterion for splitting nodes. This is a measure of the homogeneity of the labels at the node. 
 
 ---
 ### Advantages:
