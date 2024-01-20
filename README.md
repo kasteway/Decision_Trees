@@ -9,17 +9,17 @@ In a decision tree, data starts at the root node, undergoes a series of splits (
 
 1. Nodes:
 
-  - Root Node: This is the starting point of the tree. It represents the entire dataset, which then gets divided into two or more homogeneous sets.
+   - Root Node: This is the starting point of the tree. It represents the entire dataset, which then gets divided into two or more homogeneous sets.
   
-  - Decision Node: When a sub-node splits into further sub-nodes, it's called a decision node. These are the points where the data is split based on a certain condition or attribute.
+   - Decision Node: When a sub-node splits into further sub-nodes, it's called a decision node. These are the points where the data is split based on a certain condition or attribute.
 
 2. Splits:
 
-  - Splits are the criteria or conditions that divide nodes into two or more sub-nodes. For example, in a decision tree classifying animals, a split might be based on whether the animal can fly. Each split aims to make the resulting sub-nodes as pure as possible, meaning the data in each sub-node is more similar to each other and different from the data in other sub-nodes.
+   - Splits are the criteria or conditions that divide nodes into two or more sub-nodes. For example, in a decision tree classifying animals, a split might be based on whether the animal can fly. Each split aims to make the resulting sub-nodes as pure as possible, meaning the data in each sub-node is more similar to each other and different from the data in other sub-nodes.
 
 3. Leaves or Leaf Nodes:
 
-  - Leaf nodes are the final output of the decision tree. These nodes do not split any further and contain the outcome or prediction. In classification trees, each leaf node represents a class label. In regression trees, they represent a continuous value.
+   - Leaf nodes are the final output of the decision tree. These nodes do not split any further and contain the outcome or prediction. In classification trees, each leaf node represents a class label. In regression trees, they represent a continuous value.
 
 4. Node Impurity:
    
