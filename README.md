@@ -148,7 +148,7 @@ The algorithm will evaluate each feature and calculate the metric (like Gini imp
    - ### Popular Boosting Methods:
       - AdaBoost (Adaptive Boosting)
       - Gradient Boosting
-      - XGBoost (eXtreme Gradient Boosting)
+      - XGBoost (eXtreme Gradient Boosting) *** Most popular ***
       - LightGBM (Light Gradient Boosting Machine)
       - CatBoost (Categorical Boosting)
 
