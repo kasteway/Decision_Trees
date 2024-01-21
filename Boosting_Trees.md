@@ -67,7 +67,7 @@ There are several boosting methods, each with its unique approach
 - Key Feature: It’s more flexible than AdaBoost as it allows optimization of arbitrary differentiable loss functions.
 - Usage: Widely used for both regression and classification tasks; highly effective but can be prone to overfitting.
 
-######    XGBoost (eXtreme Gradient Boosting):
+######    XGBoost (eXtreme Gradient Boosting): *** Most Popular ***
 
 - How it Works: An advanced implementation of gradient boosting with better performance and speed. It includes several optimizations to increase efficiency and computational speed.
 - Key Feature: Offers several advanced features like handling missing values, tree pruning, and regularization to avoid overfitting.
