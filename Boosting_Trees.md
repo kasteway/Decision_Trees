@@ -16,7 +16,7 @@ Boosting can be very powerful. Since each new tree is built to correct the mista
 - Gradient Boosting
 - XGBoost (eXtreme Gradient Boosting)
 - LightGBM (Light Gradient Boosting Machine)
-- CatBoost (Categorical Boosting)
+- CatBoost (Categorical Boosting) 
 
 
 Each of these methods has its strengths and is suited for different kinds of data and problems. Choosing the right one depends on the specific requirements of the task, such as the nature of the data, the size of the dataset, computational resources, and the specific problem being solved.
