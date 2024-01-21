@@ -1,6 +1,8 @@
 # Decision_Trees
 
-A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. The goal is to maximize purity or minimize impurity. Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
+A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. The goal is to maximize purity(i.e., all data points in a node belong to the same class) or minimize impurity. 
+
+Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
 
 ---
 ### How it works:
@@ -69,6 +71,31 @@ In a decision tree, data starts at the root node, undergoes a series of splits (
 
 
 ---
+
+## When Does the Splitting Stop?
+
+Determining when to stop splitting the nodes is crucial to avoid overfitting. 
+
+- Pure Node:
+   - When a leafe node is 100% of one class.  
+
+- Increase in Impurity:
+   - Stop splitting if the split does not decrease the impurity significantly.
+  
+- Maximum Depth:
+   - Pre-set a maximum depth of the tree. Once this depth is reached, the tree stops growing.
+
+- Minimum Samples for a Split:
+   - Specify the minimum number of samples that a node must have to consider a split. If the number of samples is below this threshold, the node is not split.
+
+- Minimum Samples per Leaf Node:
+   - Set the minimum number of samples that a leaf node must have. This ensures that each leaf has a sufficient number of instances.
+
+- Pruning:
+   - After building a large tree, prune it back by removing branches that provide little predictive power. This can be done using techniques like cost complexity pruning (also known as weakest link pruning).
+
+
+---
 ## How Does a Decision Tree Choose What Feature to Split On at Each Node?
 
 Decision trees use a metric to choose the best feature to split on at each node. The goal is to find the feature and the split that will result in the most homogeneous sub-nodes (i.e., nodes with instances that are as similar as possible). 
@@ -107,28 +134,23 @@ The algorithm will evaluate each feature and calculate the metric (like Gini imp
 ![Screenshot 2024-01-20 at 2 00 09 PM](https://github.com/kasteway/Decision_Trees/assets/62068733/72db9c21-8260-4ab3-a3b5-ada6630332d2)
 
 --- 
+## Other options of Trees:
 
-## When Does the Splitting Stop?
-
-Determining when to stop splitting the nodes is crucial to avoid overfitting. 
-
-- Pure Node:
-   - When a leafe node is 100% of one class.  
-
-- Increase in Impurity:
-   - Stop splitting if the split does not decrease the impurity significantly.
-  
-- Maximum Depth:
-   - Pre-set a maximum depth of the tree. Once this depth is reached, the tree stops growing.
-
-- Minimum Samples for a Split:
-   - Specify the minimum number of samples that a node must have to consider a split. If the number of samples is below this threshold, the node is not split.
-
-- Minimum Samples per Leaf Node:
-   - Set the minimum number of samples that a leaf node must have. This ensures that each leaf has a sufficient number of instances.
-
-- Pruning:
-   - After building a large tree, prune it back by removing branches that provide little predictive power. This can be done using techniques like cost complexity pruning (also known as weakest link pruning).
+1. Random Forest:
+   - Random Forest is a collection of many decision trees.
+   - Each tree makes its own prediction, and the final output of the Random Forest is decided based on the majority vote of all these trees for Classification & the average for Regression.
+   - This makes the Random Forest a strong and reliable method in machine learning because it combines the decisions of many different models, reducing the chance of making a poor decision based on just one model's view.
+     
+3. Boosted Trees:
+   - Boosting is a powerful ensemble technique in machine learning that combines multiple weak learners (typically decision trees) to form a strong learner. 
+   - Boosting involves creating a series of decision trees, where each new tree tries to correct the mistakes of the previous ones.
+   - Since each new tree is built to correct the mistakes of the previous ones, the final model (all the trees together) can be very good at making predictions, even for complex problems.
+   - ### Popular Boosting Methods:
+      - AdaBoost (Adaptive Boosting)
+      - Gradient Boosting
+      - XGBoost (eXtreme Gradient Boosting)
+      - LightGBM (Light Gradient Boosting Machine)
+      - CatBoost (Categorical Boosting)
 
 
 ---
