@@ -56,8 +56,8 @@ So, a Random Forest is a collection of many decision trees. Each tree makes its 
 If we compare Random Forest to a single Decision Tree, there are several key hyperparameters that are different or unique to Random Forests. These hyperparameters help in controlling the behavior of the Random Forest model.
 
  **Number of Trees (n_estimators -> Default = 100):**
-    - This is perhaps the most important hyperparameter for a Random Forest. 
-    - It specifies the number of trees in the forest. More trees usually mean better performance but also longer training time and chance of overfitting grows.
+   - This is perhaps the most important hyperparameter for a Random Forest. 
+   - It specifies the number of trees in the forest. More trees usually mean better performance but also longer training time and chance of overfitting grows.
 
 **Maximum Features (max_features  --> Default = 'auto'):**
    - This parameter determines the maximum number of features that are considered for splitting a node. It can be set as a number, a percentage, or different heuristics like 'sqrt' or 'log2'.
@@ -65,16 +65,23 @@ If we compare Random Forest to a single Decision Tree, there are several key hyp
    - Recommend: Start with sqrt(number of features) then use a grid search for other possible values
 
 **Bootstrap Samples[data rows] (bootstrap -> Default =TRUE):**
-     This parameter decides whether or not to use bootstrap sampling when building trees. Bootstrap sampling means randomly selecting a subset of the data(rows from the data) with replacement for training each tree. This means, we are taking a subset of the features & a subset of the rows of data AKA Bootstrapped. This helps reduce correlation betwen trees because each tree is trained on a different subset rows of data & features which will likely better generalize.
+   - This parameter decides whether or not to use bootstrap sampling when building trees.
+   - Bootstrap sampling means randomly selecting a subset of the data(rows from the data) with replacement for training each tree.
+   - This means, we are taking a subset of the features & a subset of the rows of data AKA Bootstrapped.
+   - This helps reduce correlation betwen trees because each tree is trained on a different subset rows of data & features which will likely better generalize.
 
 **Out-of-Bag Error (oob_score -> Default =FALSE):**
-     This is a method for estimating the generalization accuracy of the Random Forest. It uses the bootstrap samples not included in the training of each tree (the 'out-of-bag' samples) to estimate the model's performance. This is unique to     Random Forests and isn't a concept in a single Decision Tree. This will not impact the trees and only provides a way to measure the performance of the trees on the untrained data set similar to train/test split.
+   - This is a method for estimating the generalization accuracy of the Random Forest.
+   - It uses the bootstrap samples not included in the training of each tree (the 'out-of-bag' samples) to estimate the model's performance.
+   - This is unique to Random Forests and isn't a concept in a single Decision Tree.
+   - This will not impact the trees and only provides a way to measure the performance of the trees on the untrained data set similar to train/test split.
 
 **Minimum Samples for Splitting (min_samples_split -> Default =2):**
-    While this is also a hyperparameter for Decision Trees, it often plays a more crucial role in Random Forests because it affects each tree in the forest and thus has a compounded effect. This means that a node will be split if it contains 2 or more samples.
+   - While this is also a hyperparameter for Decision Trees, it often plays a more crucial role in Random Forests because it affects each tree in the forest and thus has a compounded effect.
+   - This means that a node will be split if it contains 2 or more samples.
 
 **Minimum Samples for a Leaf Node (min_samples_leaf -> Default =1):**
-    This setting allows each leaf node to have as few as 1 sample.
+   - This setting allows each leaf node to have as few as 1 sample.
  
 
 ---
