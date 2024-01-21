@@ -2,7 +2,9 @@
 
 A decision tree in machine learning is a method used for making decisions based on data. It's like a flowchart where each branch represents a choice between different options, leading to different outcomes or predictions. The goal is to maximize purity(i.e., all data points in a node belong to the same class) or minimize impurity. 
 
-Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
+Decision Trees work well on tabular structured data. Decision Trees are a straightforward and versatile tool in machine learning, but they have some limitations, especially when dealing with complex, real-world scenarios.
+
+
 
 ---
 ### How it works:
