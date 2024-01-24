@@ -82,6 +82,6 @@ If we compare Random Forest to a single Decision Tree, there are several key hyp
 
 **Minimum Samples for a Leaf Node (min_samples_leaf -> Default =1):**
    - This setting allows each leaf node to have as few as 1 sample.
- 
+ -
 
 ---
